@@ -1,10 +1,10 @@
 # jest-vue-emotion
 
-> Jest testing utilities for vue-emotion
+> Jest Snapshot testing utilities for vue-emotion
 
 # Why
 
-Adding snapshot tests with Jest is a great way to help avoid unintended changes to your app's UI.
+Adding [snapshot tests](https://jestjs.io/docs/en/snapshot-testing) with [Jest](https://github.com/facebook/jest) is a great way to help avoid unintended changes to your app's UI.
 
 By diffing the serialized value of your Vue tree Jest can show you what changed in your app and allow you to fix it or update the snapshot.
 
@@ -24,7 +24,7 @@ yarn add jest-vue-emotion
 
 # Snapshot Serializer
 
-The easiest way to test Vue components with vue-emotion is with the snapshot serializer. You can register the serializer via the `snapshotSerializers` configuration property in your jest configuration like so:
+The easiest way to test Vue components with [vue-emotion](https://github.com/egoist/vue-emotion) is with the snapshot serializer. You can register the serializer via the [snapshotSerializers](https://jestjs.io/docs/en/configuration#snapshotserializers-array-string) configuration property in your jest configuration like so:
 
 ```js
 // jest.config.js
@@ -37,7 +37,7 @@ module.exports = {
 
 # Writing a test
 
-Writing a test with `jest-vue-emotion` involves creating a snapshot from the `@vue/test-utils`'s resulting `wrapper`.
+Writing a test with `jest-vue-emotion` involves creating a snapshot from the [@vue/test-utils](https://github.com/vuejs/vue-test-utils)'s resulting [Wrapper](https://vue-test-utils.vuejs.org/api/wrapper/#properties).
 
 ```js
 import Vue from 'vue';
@@ -81,3 +81,7 @@ exports[`StyledComponent renders with correct styles 1`] = `
 ```
 
 When the styles of a component change, the snapshot will fail and you'll be able to update the snapshot or fix the component.
+
+## Thanks
+
+This is heavily inspired by [jest-emotion](https://github.com/emotion-js/emotion/tree/master/packages/jest-emotion) which implements the same thing (and more) for React.
