@@ -1,0 +1,25 @@
+{
+  "name": "jest-vue-emotion",
+  "version": "1.0.0",
+  "description": "Jest testing utilities for vue-emotion",
+  "main": "index.js",
+  "keywords": [
+    "vue",
+    "jest",
+    "emotion",
+    "vue-emotion",
+    "css-in-js",
+    "snapshot",
+    "css",
+    "styles"
+  ],
+  "author": "Thomas Holland",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/hollandThomas/jest-vue-emotion.git"
+  },
+  "dependencies": {
+    "prettier": "^1.16.3"
+  }
+}
