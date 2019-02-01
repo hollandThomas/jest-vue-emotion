@@ -35,7 +35,7 @@ module.exports = {
 ```
 
 
-### Writing a test
+# Writing a test
 
 Writing a test with `jest-vue-emotion` involves creating a snapshot from the `@vue/test-utils`'s resulting `wrapper`.
 
